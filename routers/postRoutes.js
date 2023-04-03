@@ -6,7 +6,7 @@ const {GridFsStorage} = require('multer-gridfs-storage');
 const postController = require('../controllers/postControllers');
  
 const Storage = new GridFsStorage({
-    url : process.env.DB_URL+process.env.DB_NAME,
+    url : process.env.DB_URL,
     file : (req , file) =>{
         console.log(file);
         return {
