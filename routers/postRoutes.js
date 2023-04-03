@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('../export-lib/libraries').express;
 const router = express.Router();
 const multer = require('multer');
-const {GridFsStorage} = require('multer-gridfs-Storage');
+const {GridFsStorage} = require('multer-gridfs-storage');
 const postController = require('../controllers/postControllers');
  
 const Storage = new GridFsStorage({
